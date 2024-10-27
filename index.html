@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio || Tailwind CSS Website</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/output.css" />
+    <!-- font-awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- remix icon  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!---------- header start  ---------->
+    <header id="navbar" class="sticky top-0 z-50 duration-300">
+      <nav class="container relative flex items-center justify-between">
+        <div class="py-5">
+          <img
+            src="./images/logo.png"
+            alt="logo"
+            id="logo"
+            class="w-10 cursor-pointer md:w-14"
+          />
+          <img
+            src="./images/logo_white.png"
+            alt="white-logo"
+            id="white-logo"
+            class="hidden w-10 cursor-pointer md:w-14"
+          />
+        </div>
+
+        <div
+          id="nav-menu"
+          class="absolute top-0 left-0 hidden w-full py-24 bg-primaryColor lg:block lg:bg-transparent lg:static lg:py-0 lg:border-none lg:w-auto lg:ml-auto"
+        >
+          <ul
+            class="flex flex-col items-center gap-8 text-center lg:flex-row lg:gap-5"
+          >
+            <li><a href="#quality_service" class="nav-link">Service</a></li>
+            <li><a href="#recent_work" class="nav-link">Works</a></li>
+            <li><a href="#exp_edu" class="nav-link">Resume</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#blogs" class="nav-link">Blogs</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li>
+              <button class="ml-10 btn">
+                <span class="z-10">Hire Me!</span>
+              </button>
+            </li>
+          </ul>
+
+          <div
+            id="nav-close"
+            class="absolute text-3xl cursor-pointer top-6 right-3 text-whiteColor md:mr-8 lg:hidden"
+          >
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="flex items-center gap-5">
+          <i
+            class="ml-4 text-2xl cursor-pointer ri-moon-line"
+            id="theme-toggle"
+          ></i>
+          <div id="hamburger" class="lg:hidden">
+            <i class="text-2xl cursor-pointer ri-menu-2-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!----------- header ends  ---------->
+
+    <!----------- hero start  ---------->
+    <section id="hero" class="relative py-5">
+      <!-- blob  -->
+      <div
+        class="absolute right-0 top-[-20%] w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"
+      ></div>
+
+      <div class="container">
+        <!-- bg-image  -->
+        <div
+          class="hidden md:block absolute top-0 left-[30%] lg:left-[35%] animate-scaleAnimation"
+        >
+          <p
+            class="font-Londrina text-[400px] lg:text-[450px] text-primaryColorLight uppercase -z-10 opacity-5"
+          >
+            hi
+          </p>
+        </div>
+        <!-- hero content  -->
+        <div class="flex items-center gap-5">
+          <div class="space-y-2 md:w-1/2">
+            <h3 class="text-2xl font-bold md:text-3xl lg:text-4xl">
+              I am William
+            </h3>
+            <h1>
+              <span class="titel">Web Developer +</span>
+              <br />
+              <span class="titel">UX Designer</span>
+            </h1>
+
+            <div class="relative flex justify-center md:hidden">
+              <!-- blob  -->
+              <div
+                class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"
+              ></div>
+              <img
+                src="./images/person.jpg"
+                alt="person"
+                class="my-10 max-w-[90%] duration-300 origin-center rotate-[4.5deg] border-2 border-primaryColor rounded-[38px] hover:rotate-0 hover:border-primaryColorLight"
+              />
+            </div>
+            <p class="max-w-xl pb-5 text-xl">
+              I dissect intricate user experience issues to craft solutions
+              focused on integrity, linking billions of individuals.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-5">
+              <button class="btn_outline">
+                Download CV
+                <i class="fa-solid fa-download"></i>
+              </button>
+
+              <div class="flex items-center gap-5">
+                <div class="social-icon">
+                  <i class="z-10 fa-brands fa-twitter"></i>
+                </div>
+
+                <div class="social-icon">
+                  <i class="z-10 fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <div class="social-icon">
+                  <i class="z-10 fa-brands fa-youtube"></i>
+                </div>
+
+                <div class="social-icon">
+                  <i class="z-10 fa-brands fa-github"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- hero image  -->
+          <div class="relative justify-center hidden md:w-1/2 md:flex">
+            <!-- blob  -->
+            <div
+              class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"
+            ></div>
+            <img
+              src="./images/person.jpg"
+              alt="person"
+              class="my-10 md:w-full lg:max-w-[80%] duration-300 origin-center rotate-[4.5deg] border-2 border-primaryColor rounded-[38px] hover:rotate-0 hover:border-primaryColorLight"
+            />
+          </div>
+        </div>
+        <!-- hero footer  -->
+        <div
+          class="grid grid-cols-1 gap-10 py-10 lg:grid-cols-4 sm:grid-cols-2"
+        >
+          <div class="flex items-center gap-3">
+            <p class="text-5xl font-bold lg:text-6xl">12</p>
+            <p>Years of <br />Experience</p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <p class="text-5xl font-bold lg:text-6xl">50+</p>
+            <p>
+              Project <br />
+              Completed
+            </p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <p class="text-5xl font-bold lg:text-6xl">1.5k</p>
+            <p>
+              Happy <br />
+              Clients
+            </p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <p class="text-5xl font-bold lg:text-6xl">12</p>
+            <p>
+              Years of <br />
+              Experience
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------- hero ends  ---------->
+
+    <div>45 minute start hove</div>
+
+    <!-- main js  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
