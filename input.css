@@ -7,23 +7,40 @@
   html {
     @apply scroll-smooth;
   }
+
   body {
     @apply dark:bg-darkBodyColor dark:text-textColor text-primaryColor font-poppins tracking-wider;
   }
+
   section {
     @apply py-16 md:pt-28 md:mb-20;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply w-full dark:bg-darkBodyColor border border-gray-800 px-4 py-3 rounded-lg;
+  }
+
+  input:focos,
+  input:active,
+  select:focos,
+  select:active,
+  textarea:focos,
+  textarea:active {
+    @apply outline-none border border-primaryColorLight;
   }
 }
 
 @layer components {
   .nav-link {
-    @apply relative font-bold;
+    @apply relative font-bold text-textColor lg:text-primaryColor dark:text-textColor;
   }
 
   .nav-link::before {
     @apply content-[''] absolute w-full h-[2px] bg-gradient-to-r from-primaryColorLight to-primaryColor -bottom-[5px] left-0 scale-x-0 transition-transform ease-in-out origin-right duration-500;
   }
-
+  .active::before,
   .nav-link:hover::before {
     @apply scale-x-100 origin-left;
   }
@@ -124,5 +141,27 @@
 
   .skills_card:hover img {
     @apply scale-110;
+  }
+  /* -----------------------------------------*/
+  .blog_card img {
+    @apply w-full duration-300;
+  }
+
+  .blog_card:hover img {
+    @apply scale-110;
+  }
+
+  .blog_card div,
+  .blog_card,
+  .blog_card_info p {
+    @apply duration-300;
+  }
+
+  .blog_card:hover .blog_card_info {
+    @apply bg-primaryColorLight text-whiteColor;
+  }
+
+  .blog_card:hover .blog_card_info p {
+    @apply text-whiteColor;
   }
 }

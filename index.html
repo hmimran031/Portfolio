@@ -96,7 +96,7 @@
         </div>
         <!-- hero content  -->
         <div class="flex items-center gap-5">
-          <div class="space-y-2 md:w-1/2">
+          <div class="space-y-2 hero_content md:w-1/2">
             <h3 class="text-2xl font-bold md:text-3xl lg:text-4xl">
               I am William
             </h3>
@@ -149,7 +149,9 @@
           </div>
 
           <!-- hero image  -->
-          <div class="relative justify-center hidden md:w-1/2 md:flex">
+          <div
+            class="relative justify-center hidden hero_image md:w-1/2 md:flex"
+          >
             <!-- blob  -->
             <div
               class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"
@@ -163,7 +165,7 @@
         </div>
         <!-- hero footer  -->
         <div
-          class="grid grid-cols-1 gap-10 py-10 lg:grid-cols-4 sm:grid-cols-2"
+          class="grid grid-cols-1 gap-10 py-10 hero_footer lg:grid-cols-4 sm:grid-cols-2"
         >
           <div class="flex items-center gap-3">
             <p class="text-5xl font-bold lg:text-6xl">12</p>
@@ -204,7 +206,7 @@
       class="bg-sectionColor dark:bg-darkSectionColor"
     >
       <div class="container">
-        <div class="flex flex-col items-center text-center gap5">
+        <div class="flex flex-col items-center text-center service_top gap5">
           <h2 class="subtitel">My Quality Services</h2>
           <p class="max-w-2xl">
             We transform your ideas and desires into a distinctive web project
@@ -304,7 +306,7 @@
 
     <!----------- My Recent Works start  ---------->
     <section id="recent_work" class="container">
-      <div class="flex flex-col items-center gap-5 text-center">
+      <div class="flex flex-col items-center gap-5 text-center recent_work_top">
         <h2 class="subtitel">My Recent Works</h2>
         <p class="max-w-2xl">
           We transform your ideas and desires into a distinctive web project
@@ -313,7 +315,7 @@
       </div>
 
       <div
-        class="relative w-max mx-auto my-10 h-10 text-xs grid grid-cols-4 items-center px-[3px] rounded-full bg-sectionColor dark:bg-sectionColor border border-primaryColor overflow-hidden transition md:h-12 md:text-base"
+        class="recent_work_tabs relative w-max mx-auto my-10 h-10 text-xs grid grid-cols-4 items-center px-[3px] rounded-full bg-sectionColor dark:bg-sectionColor border border-primaryColor overflow-hidden transition md:h-12 md:text-base"
       >
         <!-- indicator  -->
         <div
@@ -488,7 +490,7 @@
       <div class="container grid w-full grid-cols-1 gap-10 md:grid-cols-2">
         <!-- experience  -->
         <div>
-          <div class="flex items-center gap-3">
+          <div class="flex items-center gap-3 exp_top">
             <div
               class="text-2xl text-primaryColorLight md:text-3xl lg:text-4xl"
             >
@@ -568,7 +570,7 @@
 
         <!-- education  -->
         <div>
-          <div class="flex items-center gap-3">
+          <div class="flex items-center gap-3 edu_top">
             <div
               class="text-2xl text-primaryColorLight md:text-3xl lg:text-4xl"
             >
@@ -594,7 +596,7 @@
 
             <!-- card 2  -->
             <div
-              class="p-5 duration-300 exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight"
+              class="p-5 duration-300 edu_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight"
             >
               <p class="pb-3 text-sm font-bold text-primaryColorLight">
                 2022-Present
@@ -607,7 +609,7 @@
 
             <!-- card 3  -->
             <div
-              class="p-5 duration-300 exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight"
+              class="p-5 duration-300 edu_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight"
             >
               <p class="pb-3 text-sm font-bold text-primaryColorLight">
                 2016-2020
@@ -620,7 +622,7 @@
 
             <!-- card 4  -->
             <div
-              class="p-5 duration-300 exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight"
+              class="p-5 duration-300 edu_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight"
             >
               <p class="pb-3 text-sm font-bold text-primaryColorLight">
                 2010-2011
@@ -633,7 +635,7 @@
 
             <!-- card 5  -->
             <div
-              class="p-5 duration-300 exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight"
+              class="p-5 duration-300 edu_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight"
             >
               <p class="pb-3 text-sm font-bold text-primaryColorLight">
                 2022-Present
@@ -650,8 +652,8 @@
     <!----------- Experience & Education ends  ---------->
 
     <!----------- My Skills start  ---------->
-    <section id="Skills" class="container">
-      <div class="flex flex-col items-center gap-5 text-center">
+    <section id="skills" class="container">
+      <div class="flex flex-col items-center gap-5 text-center skills_top">
         <h2 class="subtitel">My Skills</h2>
         <p class="max-w-2xl">
           We transform your ideas and desires into a distinctive web project
@@ -739,6 +741,274 @@
     </section>
     <!----------- My Skills ends  ---------->
 
+    <!----------- Recent Blogs start  ---------->
+    <section id="blogs" class="bg-sectionColor dark:bg-darkSectionColor">
+      <div class="container">
+        <div class="flex flex-col items-center gap-5 text-center blog_top">
+          <h2 class="subtitel">Recent Blogs</h2>
+          <p class="max-w-2xl">
+            We transform your ideas and desires into a distinctive web project
+            that inspires both you and your customers.
+          </p>
+        </div>
+
+        <div
+          class="grid w-full grid-cols-1 gap-10 px-5 mt-10 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <!-- blog card 1  -->
+          <div
+            class="relative overflow-hidden cursor-pointer blog_card rounded-3xl"
+          >
+            <img src="./images/blog-1.jpg" alt="recent blogs" />
+            <p
+              class="absolute px-3 py-1 text-sm uppercase rounded-full top-3 left-3 bg-primaryColorLight text-whiteColor"
+            >
+              tutorial
+            </p>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-3 mx-4 my-3 space-y-1 blog_card_info bg-whiteColor dark:bg-primaryColor rounded-2xl"
+            >
+              <div
+                class="flex items-center gap-3 text-sm text-primaryColorLight"
+              >
+                <p><i class="fa-regular fa-calendar-days"></i> Oct 01, 2022</p>
+                <p><i class="fa-regular fa-comments"></i> Comment (0)</p>
+              </div>
+
+              <p class="text-xl font-bold capitalize">top 10 ui ux designers</p>
+            </div>
+          </div>
+
+          <!-- blog card 2  -->
+          <div
+            class="relative overflow-hidden cursor-pointer blog_card rounded-3xl"
+          >
+            <img src="./images/blog-2.jpg" alt="recent blogs" />
+            <p
+              class="absolute px-3 py-1 text-sm uppercase rounded-full top-3 left-3 bg-primaryColorLight text-whiteColor"
+            >
+              tips
+            </p>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-3 mx-4 my-3 space-y-1 blog_card_info bg-whiteColor dark:bg-primaryColor rounded-2xl"
+            >
+              <div
+                class="flex items-center gap-3 text-sm text-primaryColorLight"
+              >
+                <p><i class="fa-regular fa-calendar-days"></i> Oct 01, 2022</p>
+                <p><i class="fa-regular fa-comments"></i> Comment (0)</p>
+              </div>
+
+              <p class="text-xl font-bold capitalize">App Development Guides</p>
+            </div>
+          </div>
+
+          <!-- blog card 3  -->
+          <div
+            class="relative overflow-hidden cursor-pointer blog_card rounded-3xl"
+          >
+            <img src="./images/blog-3.jpg" alt="recent blogs" />
+            <p
+              class="absolute px-3 py-1 text-sm uppercase rounded-full top-3 left-3 bg-primaryColorLight text-whiteColor"
+            >
+              freebies
+            </p>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-3 mx-4 my-3 space-y-1 blog_card_info bg-whiteColor dark:bg-primaryColor rounded-2xl"
+            >
+              <div
+                class="flex items-center gap-3 text-sm text-primaryColorLight"
+              >
+                <p><i class="fa-regular fa-calendar-days"></i> Oct 01, 2022</p>
+                <p><i class="fa-regular fa-comments"></i> Comment (0)</p>
+              </div>
+
+              <p class="text-xl font-bold capitalize">
+                Learn Graphic Design Free
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------- Recent Blogs ends  ---------->
+
+    <!----------- Contact start  ---------->
+    <section id="contact" class="container">
+      <div
+        class="flex flex-col gap-16 md:flex-row-reverse md:gap-5 md:items-center"
+      >
+        <!-- content 1  -->
+        <div class="flex-1 space-y-7 md:space-y-10 lg:pl-20 xl:pl-40">
+          <div class="flex items-start gap-4 contact_item">
+            <div
+              class="grid w-10 h-10 rounded-full text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColorLight lg:h-14 lg:w-14 place-items-center"
+            >
+              <i class="fa-solid fa-phone"></i>
+            </div>
+          </div>
+
+          <div class="space-y-1">
+            <p class="text-sm">Phone</p>
+            <p
+              class="font-bold duration-300 cursor-pointer hover:text-primaryColorLight"
+            >
+              +01 123 456 8096
+            </p>
+          </div>
+
+          <!-- content 2  -->
+
+          <div class="flex items-start gap-4 contact_item">
+            <div
+              class="grid w-10 h-10 rounded-full text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColorLight lg:h-14 lg:w-14 place-items-center"
+            >
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+
+          <div class="space-y-1">
+            <p class="text-sm">Email</p>
+            <p
+              class="font-bold duration-300 cursor-pointer hover:text-primaryColorLight"
+            >
+              lightcode@mail.com
+            </p>
+          </div>
+
+          <!-- content 3  -->
+          <div class="flex items-start gap-4 contact_item">
+            <div
+              class="grid w-10 h-10 rounded-full text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColorLight lg:h-14 lg:w-14 place-items-center"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+          </div>
+
+          <div class="space-y-1">
+            <p class="text-sm">Address</p>
+            <p
+              class="font-bold duration-300 cursor-pointer hover:text-primaryColorLight"
+            >
+              Warne Park Street Pine,<br />
+              FL 33157, New York
+            </p>
+          </div>
+        </div>
+
+        <!-- contact form  -->
+        <form
+          class="flex-1 px-5 py-10 space-y-3 border contact_from bg-sectionColor dark:bg-darkSectionColor border-primaryColor rounded-3xl"
+          action="#"
+        >
+          <!-- subtitle & description  -->
+          <div class="flex flex-col">
+            <h2 class="subtitle">Let’s work together!</h2>
+            <p class="max-w-2xl py-3">
+              I create elegantly simple designs and code with passion. It's as
+              straightforward as that!
+            </p>
+          </div>
+
+          <div class="-space-y-3 mt-7">
+            <div class="flex flex-col items-center gap-3 md:flex-row">
+              <input
+                type="text"
+                placeholder="First Name"
+                name="firstName"
+                autocomplete="off"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                name="lastName"
+                autocomplete="off"
+              />
+            </div>
+            <br />
+            <div class="flex flex-col items-center gap-3 md:flex-row">
+              <input
+                type="email"
+                placeholder="Email Address"
+                name="firstName"
+                autocomplete="off"
+              />
+              <input
+                type="phone"
+                placeholder="Phone Number"
+                name="phone"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+
+          <select name="" id="">
+            <option selected="">Choose a service</option>
+            <option value="Branding">Branding Design</option>
+            <option value="Web">Web Design</option>
+            <option value="UIUX">UI/UX Design</option>
+            <option value="App">App Design</option>
+          </select>
+
+          <div class="space-y-3">
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Message"
+              id=""
+            ></textarea>
+            <button class="btn">
+              <span class="z-10">Send Message</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!----------- Contact ends  ---------->
+
+    <!----------- footer start  ---------->
+    <footer id="footer" class="py-10 bg-sectionColor dark:bg-darkSectionColor">
+      <div class="container flex flex-col items-center">
+        <div>
+          <img src="./images/logo.png" alt="footer logo" class="w-32" />
+        </div>
+
+        <div>
+          <ul class="flex flex-wrap items-center justify-center space-x-3">
+            <li><a href="#quality_service" class="nav-link">Service</a></li>
+            <li><a href="#recent_work" class="nav-link">Works</a></li>
+            <li><a href="#exp_edu" class="nav-link">Resume</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#blogs" class="nav-link">Blogs</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="text-primaryColorLight">
+          <p>
+            &copy; 2024 All rights reserved by
+            <span class="font-bold cursor-pointer">H.M. Imran</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!----------- footer ends  ---------->
+
+    <!----------- footer start  ---------->
+    <a
+      href=""
+      id="scroll-up"
+      class="fixed bottom-0 z-50 px-4 py-2 text-lg duration-200 ease-in rounded-full right-10 bg-primaryColor text-whiteColor hover:translate-y-1"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!----------- footer ends  ---------->
+
+    <!----------- scroll reveal  ---------->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- main js  -->
     <script src="./js/main.js"></script>
   </body>
